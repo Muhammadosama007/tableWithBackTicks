@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Osama</title>
+</head>
+<style>
+    .tbl {
+        margin-left: 32%;
+    }
+
+    body {
+        background-image: url(bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #main {
+        box-shadow: rgba(14, 14, 32, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        background: transparent;
+        color: rgb(58, 42, 42);
+        border: none;
+    }
+
+    #h1 {
+        font-size: 25px;
+        font-weight: 600;
+        text-shadow: 2px 2px #2a08f0;
+    }
+</style>
+
+<body>
+
+    <h1 id="h1" class="text-center text-white mt-10 text-2xl ">Student Registration Form</h1>
+
+    <div id="main"
+        class="flex flex-col items-center font-mono mt-20 font-extrabold border border-8 p-8 mx-96 bg-slate-600 h-96 border-current rounded-xl ">
+        <label class="mr-28" for="fname">First Name:</label>
+        <input class="border rounded-lg w-52 h-48 hover:bg-neutral-400 bg-slate-500" type="text" value="" name=""
+            id="fname">
+        <label class="mr-28" for="lname">Last Name:</label>
+        <input class="border rounded-lg w-52 h-48 hover:bg-neutral-400 bg-slate-500" type="text" value="" name=""
+            id="lname">
+        <label class="mr-16" for="reg">Registration Id:</label>
+        <input class="border rounded-lg w-52 h-48 hover:bg-neutral-400 bg-slate-500" type="text" value="" name=""
+            id="reg">
+        <label class="mr-32" for="sec">Section:</label>
+        <select class="border rounded-lg h-48 w-52 hover:bg-neutral-400 text-white bg-slate-500" name="" id="sec">
+            <option class="" value="1">R7</option>
+            <option value="2">R2</option>
+            <option value="3">R5</option>
+        </select>
+        <label class="mr-32" for="program">Program:</label>
+        <select class="border rounded-lg h-48 w-52 hover:bg-neutral-400 text-white bg-slate-500" name="" id="program">
+            <option value="BSSE">BSSE</option>
+            <option value="BBA">BBA</option>
+            <option value="PHARM_D">PHARM-D</option>
+        </select>
+
+        <button class="mt-10 border rounded-lg w-32 bg-neutral-500" id="btn" onclick="add()">ADD</button>
+    </div>
+    <section class="tbl">
+        <table border="2" class="mt-10 border rounded-lg border-current ">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Registration Id</th>
+                    <th>Section</th>
+                    <th>Program</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="tb">
+
+            </tbody>
+        </table>
+    </section>
+    <script src="index.js"></script>
+</body>
+
+</html>
