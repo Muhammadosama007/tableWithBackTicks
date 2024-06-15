@@ -8,14 +8,13 @@
     <title>Osama</title>
 </head>
 <style>
-    .tbl {
-        margin-left: 32%;
-    }
-
     body {
         background-image: url(bg.jpg);
         background-size: cover;
         background-repeat: no-repeat;
+        height: auto;
+        padding: 0px;
+        margin: 0px;
     }
 
     #main {
@@ -37,7 +36,7 @@
     <h1 id="h1" class="text-center text-white mt-10 text-2xl ">Student Registration Form</h1>
 
     <div id="main"
-        class="flex flex-col items-center font-mono mt-20 font-extrabold border border-8 p-8 mx-96 bg-slate-600 h-96 border-current rounded-xl ">
+        class="flex flex-col items-center font-mono mt-14 font-extrabold border border-8 p-8 mx-96 bg-slate-600 h-96 border-current rounded-xl ">
         <label class="mr-28" for="fname">First Name:</label>
         <input class="border rounded-lg w-52 h-48 hover:bg-neutral-400 bg-slate-500" type="text" value="" name=""
             id="fname">
@@ -61,9 +60,11 @@
         </select>
 
         <button class="mt-10 border rounded-lg w-32 bg-neutral-500" id="btn" onclick="add()">ADD</button>
+        <input class="mt-8 w-96 h-26 placeholder-gray-600 bg-neutral-400 border rounded-lg" type="text" name=""
+            id="search" value="" placeholder="Search">
     </div>
-    <section class="tbl">
-        <table border="2" class="mt-10 border rounded-lg border-current ">
+    <section class="flex justify-center items-center">
+        <table class="mt-10 border rounded-lg border-current ">
             <thead>
                 <tr>
                     <th>First Name</th>
